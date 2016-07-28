@@ -12,6 +12,7 @@ slack_client = SlackClient(os.environ.get('SLACK_BOT_TOKEN'))
 def handle_command(command, channel):
     if not (command.startswith("Suggeste")):
         response = "Suggested: "
+        print (str(command))
         tmp = d.suggest(str(command))
         for i in tmp:
             response += i+" , "
@@ -28,7 +29,7 @@ def parse_slack_output(slack_rtm_output):
 if __name__ == "__main__":
     READ_WEBSOCKET_DELAY = 1 # 1 second delay between reading from firehose
     if slack_client.rtm_connect():
-        print("StarterBot connected and running!")
+        print("dic_demo connected and running!")
         while True:
             command, channel = parse_slack_output(slack_client.rtm_read())
             if command and channel:
