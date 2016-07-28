@@ -1,5 +1,5 @@
-# Dictionary Bot for Demo
-The Repo contains the sources of wordbot, a word suggesting bot that gives set of correct or similar word for a entered word.
+# Wordbot
+The Repo contains the sources of wordbot, a word suggesting bot that gives set of correct or similar word for an entered word.
 
 ## wordbot_slack.py
 	This is the bot for Slack app.
