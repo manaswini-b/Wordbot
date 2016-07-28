@@ -1,9 +1,6 @@
-import os
-import time
-from slackclient import SlackClient
 import enchant
 from telegram.ext import Updater
-updater = Updater(token='206404283:AAH1Z9prq8082HjZQgooxxJlMwY33Fyn5ds')
+updater = Updater(token='TOKEN') #Replace the 'TOKEN' with the token obtained for your bot
 dispatcher = updater.dispatcher
 import logging
 logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',level=logging.INFO)
